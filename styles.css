@@ -1,0 +1,292 @@
+body {
+    background-color: #171038;
+}
+
+.main-grid-container {
+    display: grid;
+    grid-template: 1fr / 1fr 10fr;
+    margin-left: -10px;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.106);
+}
+
+.side-grid {
+    border-right: 0.5px solid rgba(255, 255, 255, 0.132);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.132);
+    background-color: #171038;
+    height: 46.5vh;
+    min-height: 350px;
+    min-width: 150px;
+    /* Do I keep it? */
+    left: 0;
+    z-index: 100;
+}
+
+.main-grid {
+    background-color: #ffffff0d;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.mooc.org/hubfs/applications-of-computer-programming.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2vh 30vw -10vh 23.5vw;
+}
+
+.main-grid h3 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    justify-items: space-around;
+    display: grid;
+    padding: 8px 0px;
+    width: 42vw;
+    background-color: #171038;
+    
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+
+    opacity: 1;
+    transition: opacity 1.5s ease;
+}
+
+.main-grid h3:hover {
+    opacity: 0;
+}
+    
+/* SECOND GRID */
+.second-grid-container {
+    display: grid; 
+    margin-top: 0vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+}
+
+.second-grid-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.technology {
+    background-color: rgba(255, 255, 255, 0.106);
+    text-align: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    transition: background-color 2.0s ease;
+}
+
+.technology:hover {
+    background-color: white;
+    color: black;
+    opacity: 0.8;
+}
+
+.main-second-grid-container h2{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin-top: 10vh;
+    
+}
+
+/*SECOND GRID */
+
+.flex-box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-box {
+    color: white;
+    height: 3.3rem;
+    font-family: "Roboto", sans-serif;
+    padding-left: 20px;
+    padding-top: 14px;
+    margin-left: -10px;
+}
+
+
+
+.flex-box:hover {
+    background-color: #ffffff0b;
+    width: auto;
+    border-right: 2px solid white;
+}
+
+
+.nav-flexbox-container {
+    display: flex;
+}
+
+.main-second-grid-container h1 {
+    color: white;
+    font-family: "Caveat";
+    font-weight: lighter;
+    text-shadow: 3px 1px 1px fuchsia;
+    font-size: 3rem;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    transition: font-size 1s ease-out;
+    
+}
+
+.main-second-grid-container h1:hover {
+    font-size: 4rem;
+}
+            
+
+.logo {
+    height: 3.5rem;
+    border-radius: 40rem;
+    margin-left: 0.5vw;
+    margin-right: 35vw;
+    margin-bottom: 10px;
+}
+
+.flex-box-nav {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    align-items: center;
+    display: flex;
+    margin-top: -1vh;
+    padding: 0px 30px;
+    justify-items: center;
+}
+
+.flex-box-nav:hover {
+    background-color: #ffffff0b;
+    border-bottom: 2px solid white
+}
+
+
+
+
+.language-flexbox-container {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.106);
+    justify-content: space-around;
+}
+
+.language-flexbox-container img {
+    width: 15vw;
+    margin: 0vh 0vw;
+    transition: transform 2s;
+}
+
+.language-flexbox-container img:hover {
+    transform: scale(1.2);
+}
+
+.language-container h2 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin-top: 8vh;
+}
+
+.team-flexbox-container {
+    display: flex;
+    justify-content: center;
+}
+
+.team-flexbox-container img {
+   width: 15vw;
+   border-radius: 400px;
+   margin: 2vh 2vw 2vh 0vw;
+}
+
+.team-container h2 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: -50px;
+}
+
+.team-container h3 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin-left: -40px;
+    text-align: center;
+}
+
+.team-container img {
+        transition: transform 2s;
+}
+
+.team-container img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    font-family: "Roboto";
+    display: flex;
+    justify-content: space-between;
+    margin: 150px 0px 0px 0px;
+    padding: 20px;
+    position: sticky;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.106);
+}
+
+
+@media only screen and (max-height: 1130px) {
+    .side-grid {
+        height: 57vh;
+    }
+
+    .flex-box {
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+@media only screen and (max-height: 860px) {
+    .side-grid {
+        font-size: 1rem;
+        
+    }
+
+    .flex-box-container {
+        height: 20rem;
+    }
+}
+
+@media only screen and (max-height: 720px) {
+    .side-grid {
+        font-size: 16px;
+        
+    }
+
+    .flex-box-container {
+        height: 20rem;
+    }
+}
+
+@media only screen and (max-height: 550px) {
+    .side-grid {
+        font-size: 16px;
+        
+    }
+
+    .flex-box-container {
+        height: 20rem;
+        
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1000px) {
+    .logo {
+        margin-right: 6rem;
+    }
+}
